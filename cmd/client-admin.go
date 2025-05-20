@@ -25,10 +25,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/hawkli-1994/mc/pkg/httptracer"
+	"github.com/hawkli-1994/mc/pkg/probe"
 	"github.com/mattn/go-ieproxy"
 	"github.com/minio/madmin-go/v3"
-	"github.com/minio/mc/pkg/httptracer"
-	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 )
 

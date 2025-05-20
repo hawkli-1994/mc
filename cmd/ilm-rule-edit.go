@@ -22,9 +22,9 @@ import (
 
 	"encoding/json"
 
+	"github.com/hawkli-1994/mc/cmd/ilm"
+	"github.com/hawkli-1994/mc/pkg/probe"
 	"github.com/minio/cli"
-	"github.com/minio/mc/cmd/ilm"
-	"github.com/minio/mc/pkg/probe"
 	minio "github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/lifecycle"
 	"github.com/minio/pkg/v3/console"

@@ -25,11 +25,11 @@ import (
 
 	"encoding/json"
 
+	"github.com/hawkli-1994/mc/cmd/ilm"
+	"github.com/hawkli-1994/mc/pkg/probe"
 	"github.com/jedib0t/go-pretty/v6/table"
 	"github.com/jedib0t/go-pretty/v6/text"
 	"github.com/minio/cli"
-	"github.com/minio/mc/cmd/ilm"
-	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/minio-go/v7/pkg/lifecycle"
 )
 
