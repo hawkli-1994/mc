@@ -1,4 +1,4 @@
-module github.com/minio/mc
+module github.com/hawkli-1994/mc
 
 go 1.23.0
 
