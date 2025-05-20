@@ -243,6 +243,11 @@ func doList(ctx context.Context, clnt Client, o doListOptions) error {
 			continue
 		}
 
+		// because .ok is custom flag file. It is used to mark the folder
+		if !content.Type.IsDir() && filepath.Base(content.URL.Path) == ".ok" {
+			continue
+		}
+
 		if content.StorageClass != "" && o.filter != "" && o.filter != "*" && content.StorageClass != o.filter {
 			continue
 		}

@@ -284,7 +284,7 @@ func migrateConfigV5ToV6() {
 	cfgV6 := newConfigV6()
 
 	// Add new Google Cloud Storage alias.
-	cfgV6.Aliases["gcs"] = "https://storage.googleapis.com"
+	cfgV6.Aliases["gcs"] = "https://storage.googleapis.com2"
 
 	for k, v := range mcCfgV5.Data().(*configV5).Aliases {
 		cfgV6.Aliases[k] = v
@@ -396,7 +396,7 @@ func migrateConfigV6ToV7() {
 		}
 	}
 	// Load default settings.
-	cfgV7.loadDefaults()
+	// cfgV7.loadDefaults()
 	mcNewCfgV7, e := quick.NewConfig(cfgV7, nil)
 	fatalIf(probe.NewError(e), "Unable to initialize quick config for config version `7`.")
 
@@ -438,7 +438,7 @@ func migrateConfigV7ToV8() {
 		cfgV8.Hosts[host] = hostCfgV8
 	}
 	// Load default settings.
-	cfgV8.loadDefaults()
+	// cfgV8.loadDefaults()
 	mcNewCfgV8, e := quick.NewConfig(cfgV8, nil)
 	fatalIf(probe.NewError(e), "Unable to initialize quick config for config version `8`.")
 

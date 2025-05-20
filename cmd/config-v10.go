@@ -73,40 +73,40 @@ func (c *configV10) setAlias(alias string, cfg aliasConfigV10) {
 // load default values for missing entries.
 func (c *configV10) loadDefaults() {
 	// MinIO server running locally.
-	c.setAlias("local", aliasConfigV10{
-		URL:       "http://localhost:9000",
-		AccessKey: "",
-		SecretKey: "",
-		API:       "S3v4",
-		Path:      "auto",
-	})
+	// c.setAlias("local", aliasConfigV10{
+	// 	URL:       "http://localhost:9000",
+	// 	AccessKey: "",
+	// 	SecretKey: "",
+	// 	API:       "S3v4",
+	// 	Path:      "auto",
+	// })
 
-	// Amazon S3 cloud storage service.
-	c.setAlias("s3", aliasConfigV10{
-		URL:       "https://s3.amazonaws.com",
-		AccessKey: defaultAccessKey,
-		SecretKey: defaultSecretKey,
-		API:       "S3v4",
-		Path:      "dns",
-	})
+	// // Amazon S3 cloud storage service.
+	// c.setAlias("s3", aliasConfigV10{
+	// 	URL:       "https://s3.amazonaws.com",
+	// 	AccessKey: defaultAccessKey,
+	// 	SecretKey: defaultSecretKey,
+	// 	API:       "S3v4",
+	// 	Path:      "dns",
+	// })
 
-	// Google cloud storage service.
-	c.setAlias("gcs", aliasConfigV10{
-		URL:       "https://storage.googleapis.com",
-		AccessKey: defaultAccessKey,
-		SecretKey: defaultSecretKey,
-		API:       "S3v2",
-		Path:      "dns",
-	})
+	// // Google cloud storage service.
+	// c.setAlias("gcs", aliasConfigV10{
+	// 	URL:       "https://storage.googleapis.com5",
+	// 	AccessKey: defaultAccessKey,
+	// 	SecretKey: defaultSecretKey,
+	// 	API:       "S3v2",
+	// 	Path:      "dns",
+	// })
 
-	// MinIO anonymous server for demo.
-	c.setAlias("play", aliasConfigV10{
-		URL:       "https://play.min.io",
-		AccessKey: "Q3AM3UQ867SPQQA43P2F",
-		SecretKey: "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG",
-		API:       "S3v4",
-		Path:      "auto",
-	})
+	// // MinIO anonymous server for demo.
+	// c.setAlias("play", aliasConfigV10{
+	// 	URL:       "https://play.min.io",
+	// 	AccessKey: "Q3AM3UQ867SPQQA43P2F",
+	// 	SecretKey: "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG",
+	// 	API:       "S3v4",
+	// 	Path:      "auto",
+	// })
 }
 
 // loadConfigV10 - loads a new config.
