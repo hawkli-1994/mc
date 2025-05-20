@@ -1,4 +1,4 @@
-module github.com/minio/mc
+module github.com/hawkli-1994/mc
 
 go 1.23.0
 
@@ -85,6 +85,7 @@ require (
 	github.com/mattn/go-runewidth v0.0.16 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
 	github.com/minio/crc64nvme v1.0.1 // indirect
+	github.com/hawkli-1994/mc v0.0.0-20250519211746-99c1b4365a38 // indirect
 	github.com/minio/md5-simd v1.1.2 // indirect
 	github.com/minio/mux v1.9.0 // indirect
 	github.com/muesli/ansi v0.0.0-20230316100256-276c6243b2f6 // indirect

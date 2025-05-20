@@ -31,7 +31,7 @@ import (
 	"unicode/utf8"
 
 	"github.com/minio/cli"
-	"github.com/minio/mc/pkg/probe"
+	"github.com/hawkli-1994/mc/pkg/probe"
 )
 
 var catFlags = []cli.Flag{

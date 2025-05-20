@@ -29,10 +29,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/hawkli-1994/mc/pkg/httptracer"
+	"github.com/hawkli-1994/mc/pkg/limiter"
+	"github.com/hawkli-1994/mc/pkg/probe"
 	"github.com/klauspost/compress/gzhttp"
-	"github.com/minio/mc/pkg/httptracer"
-	"github.com/minio/mc/pkg/limiter"
-	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/cors"
 	"github.com/minio/minio-go/v7/pkg/credentials"

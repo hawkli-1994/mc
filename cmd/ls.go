@@ -27,7 +27,7 @@ import (
 
 	"github.com/dustin/go-humanize"
 	json "github.com/minio/colorjson"
-	"github.com/minio/mc/pkg/probe"
+	"github.com/hawkli-1994/mc/pkg/probe"
 	"github.com/minio/pkg/v3/console"
 )
 
@@ -251,7 +251,9 @@ func doList(ctx context.Context, clnt Client, o doListOptions) error {
 			lastPath = content.URL.Path
 			perObjectVersions = []*ClientContent{}
 		}
-
+		if !content.Type.IsDir() && filepath.Base(content.URL.Path) == ".ok" {
+			continue
+		}
 		perObjectVersions = append(perObjectVersions, content)
 		totalSize += content.Size
 		totalObjects++

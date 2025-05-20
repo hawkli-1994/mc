@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/minio/mc/pkg/probe"
+	"github.com/hawkli-1994/mc/pkg/probe"
 	"github.com/minio/pkg/v3/console"
 	"github.com/minio/pkg/v3/quick"
 )
@@ -39,9 +39,9 @@ func migrateConfig() {
 	// Migrate config V4 to V5
 	migrateConfigV4ToV5()
 	// Migrate config V5 to V6
-	migrateConfigV5ToV6()
+	// migrateConfigV5ToV6()
 	// Migrate config V6 to V7
-	migrateConfigV6ToV7()
+	// migrateConfigV6ToV7()
 	// Migrate config V7 to V8
 	migrateConfigV7ToV8()
 	// Migrate config V8 to V9
