@@ -3,7 +3,7 @@ package cmd
 import (
 	"github.com/minio/cli"
 	json "github.com/minio/colorjson"
-	"github.com/minio/mc/pkg/probe"
+	"github.com/hawkli-1994/mc/pkg/probe"
 	"github.com/minio/pkg/v3/console"
 )
 

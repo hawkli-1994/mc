@@ -24,7 +24,7 @@ import (
 	"time"
 
 	"github.com/hawkli-1994/mc/cmd/ilm"
-	"github.com/hawkli-1994/mc994/mc/pkg/probe"
+	"github.com/hawkli-1994/mc/pkg/probe"
 	"github.com/jedib0t/go-pretty/v6/table"
 	"github.com/jedib0t/go-pretty/v6/text"
 	"github.com/minio/cli"

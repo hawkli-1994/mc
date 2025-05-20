@@ -34,10 +34,10 @@ func genLDFlags(version string) string {
 
 	var ldflagsStr string
 	ldflagsStr = "-s -w -X github.com/hawkli-1994/mc/cmd.Version=" + version + " "
-	ldflagsStr = ldflagsStr + "-X github.com/hawkli-1994/mc994/mc/cmd.CopyrightYear=" + copyrightYear + " "
-	ldflagsStr = ldflagsStr + "-X github.com/hawkli-1994/mc994/mc/cmd.ReleaseTag=" + releaseTag + " "
-	ldflagsStr = ldflagsStr + "-X github.com/hawkli-1994/mc994/mc/cmd.CommitID=" + commitID() + " "
-	ldflagsStr = ldflagsStr + "-X github.com/hawkli-1994/mc994/mc/cmd.ShortCommitID=" + commitID()[:12]
+	ldflagsStr = ldflagsStr + "-X github.com/hawkli-1994/mc/cmd.CopyrightYear=" + copyrightYear + " "
+	ldflagsStr = ldflagsStr + "-X github.com/hawkli-1994/mc/cmd.ReleaseTag=" + releaseTag + " "
+	ldflagsStr = ldflagsStr + "-X github.com/hawkli-1994/mc/cmd.CommitID=" + commitID() + " "
+	ldflagsStr = ldflagsStr + "-X github.com/hawkli-1994/mc/cmd.ShortCommitID=" + commitID()[:12]
 	return ldflagsStr
 }
 

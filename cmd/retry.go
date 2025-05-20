@@ -7,7 +7,7 @@ import (
 	"time"
 
 	json "github.com/minio/colorjson"
-	"github.com/minio/mc/pkg/probe"
+	"github.com/hawkli-1994/mc/pkg/probe"
 )
 
 type retryManager struct {

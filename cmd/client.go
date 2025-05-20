@@ -30,8 +30,8 @@ import (
 	"time"
 
 	"github.com/hawkli-1994/mc/pkg/httptracer"
-	"github.com/hawkli-1994/mc994/mc/pkg/limiter"
-	"github.com/hawkli-1994/mc994/mc/pkg/probe"
+	"github.com/hawkli-1994/mc/pkg/limiter"
+	"github.com/hawkli-1994/mc/pkg/probe"
 	"github.com/klauspost/compress/gzhttp"
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/cors"

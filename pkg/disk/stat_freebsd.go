@@ -49,7 +49,7 @@ func GetFileSystemAttrs(file string) (string, error) {
 	fileAttr.WriteString("/mode:")
 	fileAttr.WriteString(strconv.Itoa(int(st.Mode)))
 	fileAttr.WriteString("/mtime:")
-	// NOTE: Keep int64 casts. See https://github.com/hawkli-1994/mc994/mc/issues/4005
+	// NOTE: Keep int64 casts. See https://github.com/hawkli-1994/mc/issues/4005
 	fileAttr.WriteString(strconv.FormatInt(int64(st.Mtimespec.Sec), 10) + "#" + strconv.FormatInt(int64(st.Mtimespec.Nsec), 10))
 	fileAttr.WriteString("/uid:")
 	fileAttr.WriteString(strconv.Itoa(int(st.Uid)))

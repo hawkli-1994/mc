@@ -24,7 +24,7 @@ import (
 
 	"github.com/dustin/go-humanize"
 	"github.com/minio/cli"
-	"github.com/minio/mc/pkg/probe"
+	"github.com/hawkli-1994/mc/pkg/probe"
 	"github.com/minio/pkg/v3/console"
 )
 

@@ -21,7 +21,7 @@ import (
 	"context"
 
 	"github.com/hawkli-1994/mc/cmd/ilm"
-	"github.com/hawkli-1994/mc994/mc/pkg/probe"
+	"github.com/hawkli-1994/mc/pkg/probe"
 	"github.com/minio/cli"
 	json "github.com/minio/colorjson"
 	minio "github.com/minio/minio-go/v7"
