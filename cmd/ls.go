@@ -251,7 +251,9 @@ func doList(ctx context.Context, clnt Client, o doListOptions) error {
 			lastPath = content.URL.Path
 			perObjectVersions = []*ClientContent{}
 		}
-
+		if !content.Type.IsDir() && filepath.Base(content.URL.Path) == ".ok" {
+			continue
+		}
 		perObjectVersions = append(perObjectVersions, content)
 		totalSize += content.Size
 		totalObjects++
