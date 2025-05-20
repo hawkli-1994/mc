@@ -23,7 +23,7 @@ import (
 	"strings"
 	"time"
 
-	json "github.com/minio/colorjson"
+	"encoding/json"
 
 	humanize "github.com/dustin/go-humanize"
 	"github.com/minio/cli"

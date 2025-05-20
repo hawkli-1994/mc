@@ -26,7 +26,8 @@ import (
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/pkg/v3/console"
 
-	json "github.com/minio/colorjson"
+	"encoding/json"
+
 	yaml "gopkg.in/yaml.v2"
 )
 

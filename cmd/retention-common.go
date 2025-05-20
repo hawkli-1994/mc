@@ -23,7 +23,8 @@ import (
 	"strconv"
 	"time"
 
-	json "github.com/minio/colorjson"
+	"encoding/json"
+
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/pkg/v3/console"

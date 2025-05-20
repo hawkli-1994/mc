@@ -20,8 +20,9 @@ package cmd
 import (
 	"context"
 
+	"encoding/json"
+
 	"github.com/minio/cli"
-	json "github.com/minio/colorjson"
 	"github.com/minio/mc/cmd/ilm"
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/pkg/v3/console"

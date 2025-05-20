@@ -21,9 +21,10 @@ import (
 	"io"
 	"os"
 
+	"encoding/json"
+
 	"github.com/fatih/color"
 	"github.com/minio/cli"
-	json "github.com/minio/colorjson"
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/minio-go/v7/pkg/cors"
 	"github.com/minio/pkg/v3/console"

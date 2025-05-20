@@ -36,10 +36,11 @@ import (
 
 	_ "crypto/sha256" // needed for selfupdate hashers
 
+	"encoding/json"
+
 	"github.com/fatih/color"
 	"github.com/mattn/go-isatty"
 	"github.com/minio/cli"
-	json "github.com/minio/colorjson"
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/pkg/v3/env"
 	"github.com/minio/selfupdate"

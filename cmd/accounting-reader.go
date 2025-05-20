@@ -26,8 +26,9 @@ import (
 	"github.com/fatih/color"
 	"github.com/minio/pkg/v3/console"
 
+	"encoding/json"
+
 	"github.com/cheggaaa/pb"
-	json "github.com/minio/colorjson"
 	"github.com/minio/mc/pkg/probe"
 )
 

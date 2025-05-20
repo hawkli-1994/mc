@@ -22,11 +22,12 @@ import (
 	"net/http"
 	"time"
 
+	"encoding/json"
+
 	"github.com/charmbracelet/bubbles/table"
 	"github.com/charmbracelet/lipgloss"
 	"github.com/fatih/color"
 	"github.com/minio/cli"
-	json "github.com/minio/colorjson"
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/pkg/v3/console"
 )

@@ -33,9 +33,10 @@ import (
 	"sync"
 	"time"
 
+	"encoding/json"
+
 	"github.com/fatih/color"
 	"github.com/minio/cli"
-	json "github.com/minio/colorjson"
 	"github.com/minio/madmin-go/v3"
 	"github.com/minio/madmin-go/v3/estream"
 	"github.com/minio/mc/pkg/probe"

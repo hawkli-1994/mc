@@ -21,10 +21,11 @@ import (
 	"strings"
 	"time"
 
+	"encoding/json"
+
 	"github.com/charmbracelet/lipgloss"
 	humanize "github.com/dustin/go-humanize"
 	"github.com/minio/cli"
-	json "github.com/minio/colorjson"
 	"github.com/minio/mc/pkg/probe"
 )
 

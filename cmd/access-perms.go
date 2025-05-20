@@ -20,7 +20,8 @@ package cmd
 import (
 	"os"
 
-	json "github.com/minio/colorjson"
+	"encoding/json"
+
 	"github.com/minio/minio-go/v7/pkg/policy"
 )
 

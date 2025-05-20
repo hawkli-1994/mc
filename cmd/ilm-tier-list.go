@@ -22,10 +22,11 @@ import (
 	"fmt"
 	"slices"
 
+	"encoding/json"
+
 	"github.com/charmbracelet/lipgloss"
 	"github.com/charmbracelet/lipgloss/table"
 	"github.com/minio/cli"
-	json "github.com/minio/colorjson"
 	madmin "github.com/minio/madmin-go/v3"
 	"github.com/minio/mc/pkg/probe"
 )

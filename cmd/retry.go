@@ -6,7 +6,8 @@ import (
 	"math/rand"
 	"time"
 
-	json "github.com/minio/colorjson"
+	"encoding/json"
+
 	"github.com/minio/mc/pkg/probe"
 )
 

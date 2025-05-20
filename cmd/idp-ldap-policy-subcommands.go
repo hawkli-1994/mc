@@ -23,9 +23,10 @@ import (
 	"strings"
 	"time"
 
+	"encoding/json"
+
 	"github.com/charmbracelet/lipgloss"
 	"github.com/minio/cli"
-	json "github.com/minio/colorjson"
 	"github.com/minio/madmin-go/v3"
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/minio-go/v7/pkg/set"

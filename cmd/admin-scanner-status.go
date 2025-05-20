@@ -30,6 +30,8 @@ import (
 	"strings"
 	"time"
 
+	"encoding/json"
+
 	"github.com/charmbracelet/bubbles/spinner"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
@@ -37,7 +39,6 @@ import (
 	"github.com/fatih/color"
 	"github.com/klauspost/compress/zstd"
 	"github.com/minio/cli"
-	json "github.com/minio/colorjson"
 	"github.com/minio/madmin-go/v3"
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/pkg/v3/console"
